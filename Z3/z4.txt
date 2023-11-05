@@ -1,0 +1,67 @@
+import QtQuick 2.9
+import QtQuick.Controls 2.2
+import QtQml.XmlListModel
+
+ApplicationWindow {
+    visible: true
+    width: 640
+    height: 480
+    title: qsTr("List model")
+
+    XmlListModel {
+        id: dataModel
+        source: "./shedule.xml"
+        query: "/Shedule/Class"
+        XmlListModelRole {
+            name: "day";
+            elementName: "Day"
+        }
+        XmlListModelRole {
+            name: "index";
+            elementName: "Index"
+        }
+        XmlListModelRole {
+            name: "discipline";
+            elementName: "Discipline"
+        }
+        XmlListModelRole {
+            name: "teacher";
+            elementName: "Teacher"
+        }
+    }
+    ListView {
+        id: container
+        width: parent.width
+        height: parent.height
+        spacing: 4
+        model: dataModel
+        delegate: Rectangle {
+            height: 75
+            radius: 3
+            color: "white"
+            //width: container.width
+            Column{
+                width: parent.width
+                Text {
+                    text: discipline
+                }
+                Text {
+                    text: teacher
+                }
+            }
+        }
+        section.property: "day"
+        section.criteria: ViewSection.FullString
+        section.delegate: Rectangle {
+            width: container.width
+            height: childrenRect.height
+            color: "lightsteelblue"
+            required property string section
+            Text {
+                text: parent.section
+                font.bold: true
+                font.pixelSize: 20
+            }
+        }
+    }
+}

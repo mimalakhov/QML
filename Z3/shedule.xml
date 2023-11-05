@@ -1,0 +1,32 @@
+<Shedule>
+    <Class>
+        <Day>Понедельник</Day>
+        <Index>1</Index>
+        <Discipline>Неклассические логики</Discipline>
+        <Teacher>Кузьмин Е.В.</Teacher>
+    </Class>
+    <Class>
+        <Day>Среда</Day>
+        <Index>1</Index>
+        <Discipline>Программная инженерия</Discipline>
+        <Teacher>Федулов Д.Д.</Teacher>
+    </Class>
+    <Class>
+        <Day>Среда</Day>
+        <Index>2</Index>
+        <Discipline>Разработка по для ОС Аврора</Discipline>
+        <Teacher>Лагутина К.В.</Teacher>
+    </Class>
+    <Class>
+        <Day>Среда</Day>
+        <Index>3</Index>
+        <Discipline>Разработка по для ОС Аврора</Discipline>
+        <Teacher>Лагутина К.В.</Teacher>
+    </Class>
+    <Class>
+        <Day>Среда</Day>
+        <Index>4</Index>
+        <Discipline>Интеллектуальные системы</Discipline>
+        <Teacher>Коновалов Е.В.</Teacher>
+    </Class>
+</Shedule>
