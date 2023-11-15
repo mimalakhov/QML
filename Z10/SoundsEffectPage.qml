@@ -8,7 +8,7 @@ Item {
     SoundEffect {
         id: soundEffect
         // ToDo: set source to gun.wav in soundeffects folder
-        source: "soundeffects/gimn-ukrainyi.wav"
+        source: "soundeffects/gun.wav"
         // ToDo: set volume controlled by volumeSlider
         volume: volumeSlider.value
         // ToDo: set loops controlled by slider
