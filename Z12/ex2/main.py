@@ -22,7 +22,7 @@ if __name__ == "__main__":
     if translator.load(QLocale.system(), 'my-localization', '-', path):
         app.installTranslator(translator)
     engine = QQmlApplicationEngine()
-    qml_file = Path(__file__).parent / 'view.qml'
+    qml_file = Path(__file__).parent / '2.qml'
     engine.load(qml_file)
     if not engine.rootObjects():
         sys.exit(-1)
