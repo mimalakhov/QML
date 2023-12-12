@@ -6,7 +6,7 @@ from PySide6.QtQml import QQmlApplicationEngine
 if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
     engine = QQmlApplicationEngine()
-    qml_file = Path(__file__).parent / 'z4.qml'
+    qml_file = Path(__file__).parent / 'z2.qml'
     engine.load(qml_file)
     if not engine.rootObjects():
         sys.exit(-1)

@@ -30,5 +30,4 @@ ApplicationWindow {
             }
         }
     }
-    Component.onCompleted: console.log(Qt.locale())
 }
